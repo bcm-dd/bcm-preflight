@@ -1,0 +1,85 @@
+{
+  "name": "business-template-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:css": "stylelint styles/**/*.css",
+    "format": "prettier --write .",
+    "pre-commit": "lint-staged",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@faceless-ui/modal": "^2.0.2",
+    "@faceless-ui/scroll-info": "^1.3.0",
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@heroicons/react": "^2.1.5",
+    "@lexical/list": "^0.17.1",
+    "@lexical/rich-text": "^0.17.1",
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
+    "@next/bundle-analyzer": "^14.2.7",
+    "@next/third-parties": "^14.2.7",
+    "@payloadcms/live-preview-react": "^0.2.0",
+    "@payloadcms/plugin-form-builder": "^1.2.2",
+    "@payloadcms/richtext-lexical": "^0.11.3",
+    "@userback/react": "^0.3.4",
+    "escape-html": "^1.0.3",
+    "framer-motion": "^11.4.0",
+    "google-maps": "^4.3.3",
+    "next": "^14.2.7",
+    "next-sitemap": "^4.2.3",
+    "npm-check-updates": "^17.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-facebook-pixel": "^1.0.4",
+    "react-hook-form": "^7.53.0",
+    "react-loading-skeleton": "^3.4.0",
+    "react-player": "^2.16.0",
+    "react-select": "^5.8.0",
+    "swiper": "^11.1.12",
+    "usehooks-ts": "^3.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.8",
+    "@types/escape-html": "^1.0.4",
+    "@types/grecaptcha": "^3.0.9",
+    "@types/node": "^22.5.3",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "eslint": "^9.9.1",
+    "eslint-config-next": "14.2.7",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.44",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  },
+  "lint-staged": {
+    "./*.{js,ts,tsx}": [
+      "prettier --write ."
+    ],
+    "./**/*.{js,ts,tsx}": [
+      "prettier --write ."
+    ],
+    "./**/**/*.{js,ts,tsx}": [
+      "prettier --write ."
+    ],
+    "./styles/**/*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "volta": {
+    "node": "20.17.0"
+  }
+}

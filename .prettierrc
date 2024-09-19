@@ -1,0 +1,29 @@
+{
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "useTabs": true,
+  "importOrder": [
+    "^use client",
+    "^@components/(.*)$",
+    "^@fields/(.*)$",
+    "^@form/(.*)$",
+    "^@globals/(.*)$",
+    "^@graphql/(.*)$",
+    "^@helpers/(.*)$",
+    "^@hooks/(.*)$",
+    "^@app/(.*)$",
+    "^@providers/(.*)$",
+    "^@public/(.*)$",
+    "^@state/(.*)$",
+    "^@types/(.*)$",
+    "^@utilities/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindConfig": "./tailwind.config.ts"
+}
